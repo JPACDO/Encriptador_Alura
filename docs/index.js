@@ -1,15 +1,4 @@
 
-// btnEncriptar = document.getElementById("#encriptar");
-// btnDesencriptar = document.getElementById("#desencriptar");
-// btnDesencriptar = document.getElementById("#desencriptar");
-
-// resultadoMsg = document.getElementById("#resultadoMsg");
-// copiar = document.getElementById("#copiar");
-
-function vowelTest(s) {
-    return (/^[aeiou]$/i).test(s);
-  }
-
 const encriptar = ()=>{
     const inputText = document.getElementById('inputText').innerText;
     let texto = inputText.toLowerCase();
@@ -66,7 +55,6 @@ const resultadoMsg = (result)=>{
     const contenidoB = document.getElementById("contenidoB").classList.remove("oculto");;
     const resultado = document.getElementById('resultadoMsg');
     resultado.innerText = result;
-    // copiarAlPortapapeles('resultadoMsg');
 }
 
 
