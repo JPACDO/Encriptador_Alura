@@ -30,7 +30,7 @@
   
             <div class="cajaIngreso">
                 <!-- <textarea name="textarea" class="inputText" placeholder="Ingrese el texto aqui"></textarea> -->
-                <span class="textarea" role="textbox" contenteditable ></span>
+                <span class="textarea" role="textbox" contenteditable id="inputText"></span>
             </div>
 
             <div class="msgInfo">
@@ -39,14 +39,14 @@
             </div>
 
             <div class="botones">
-                <button class="fullRelleno boton">Encriptar</button>
-                <button class="sinRelleno boton">Desencriptar</button>
+                <button class="fullRelleno boton" id="encriptar" onclick="encriptar()">Encriptar</button>
+                <button class="sinRelleno boton" id="desencriptar" onclick="desencriptar()">Desencriptar</button>
             </div>
         </div>
             
         <div class="grupoSalida">
             <div class="cajaResultado">
-                <div class="contenidoA">
+                <div id="contenidoA">
                     <div class="imagenDescifrar">
                         <img src="images/Muñeco.svg" alt="descifrando" >
                     </div>
@@ -54,9 +54,9 @@
                     <div class="reuladoSubtitulo">Ingresa el texto que desees encriptar o desencriptar.</div>
                 </div>
                 
-                <div class="contenidoB oculto">
-                    <p class="resultadoMsg">y</p>
-                    <button class="sinRelleno boton ">Copiar</button>
+                <div id="contenidoB" class="oculto">
+                    <p id="resultadoMsg"></p>
+                    <button class="sinRelleno boton" id="copiar" onclick="copiar()">Copiar</button>
                 </div>
             </div>
         </div>
