@@ -1,6 +1,17 @@
 
 const encriptar = ()=>{
     const inputText = document.getElementById('inputText').innerText;
+
+    // patron = /[A-Za-z0-9]/;
+    patron = /^[a-z\s]+$/;
+    if (inputText.match(patron) === null){
+        alert('Verifica que tu mensaje no contenga mayúsculas, acentos, números o caracteres especiales')
+
+        return null;
+    }
+
+
+
     let texto = inputText.toLowerCase();
     console.log(texto)
     var solution = "";
